@@ -9,11 +9,14 @@
     </head>
     <body>
         <header class="page-header">
-      <div class="container">
-          <h1><a href="/">Django Girls Blog</a></h1>
-      </div>
-    </header>
-    <main class="container">
+            <div class="container">
+                <a href="{% url 'post_new' %}" class="top-menu">
+                    <img src="{% static 'blog/icons/file-earmark-plus.svg' %}" alt="new post">
+                </a>
+                    <h1><a href="/">Django Girls Blog</a></h1>
+            </div>
+        </header>
+        <main class="container">
         <div class="row">
             <div class="col">
             {% block content %}
